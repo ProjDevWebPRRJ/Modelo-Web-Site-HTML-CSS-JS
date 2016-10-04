@@ -2,8 +2,8 @@
     $login = $_POST['login'];
     $entrar = $_POST['entrar'];
     $senha = md5($_POST['senha']);
-    $connect = mysql_connect('mysql.hostinger.com.br','u542430202_banco','tads2016');
-    $db = mysql_select_db('u542430202_banco');
+    $connect = mysql_connect('host.com.br','login','senha');
+    $db = mysql_select_db('nome_banco_de_dados');
         if (isset($entrar)) {
                      
             $verifica = mysql_query("SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
